@@ -22,5 +22,49 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+.wordpress-content>*+* {
+  margin-top: 1.5rem;
+}
+
+.wordpress-content h2,
+.wordpress-content h3,
+.wordpress-content h4 {
+  color: var(--foreground);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.wordpress-content h2 {
+  font-size: 1.75rem;
+}
+
+.wordpress-content h3 {
+  font-size: 1.4rem;
+}
+
+.wordpress-content a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.wordpress-content img {
+  height: auto;
+  max-width: 100%;
+}
+
+.wordpress-content ul,
+.wordpress-content ol {
+  padding-left: 1.5rem;
+}
+
+.wordpress-content ul {
+  list-style: disc;
+}
+
+.wordpress-content ol {
+  list-style: decimal;
 }
