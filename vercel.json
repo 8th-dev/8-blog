@@ -1,4 +1,3 @@
 {
-    "ignoreCommand": "test \"$VERCEL_GIT_COMMIT_REF\" != \"main\"",
-    "installCommand": "rm -rf node_modules && pnpm config set //npm.pkg.github.com/:_authToken \"$NODE_AUTH_TOKEN\" && pnpm install --frozen-lockfile"
+    "ignoreCommand": "test \"$VERCEL_GIT_COMMIT_REF\" != \"main\""
 }

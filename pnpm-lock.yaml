@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@8th-dev/ui':
-        specifier: ^0.1.0
-        version: 0.1.0(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@7.2.0)(typescript@5.9.3)
+        specifier: ^0.1.2
+        version: 0.1.2(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@7.2.0)(typescript@5.9.3)
       graphql:
         specifier: ^17.0.2
         version: 17.0.2
@@ -54,8 +54,8 @@ importers:
 
 packages:
 
-  '@8th-dev/ui@0.1.0':
-    resolution: {integrity: sha512-aYuhGsEeXc4S9jK0Izt324aYn4Oal0PRphmfd/2NE6LFYVumFfSc79VzmL9AI0W+IisP+buGmfvv+EMfjVFwBg==, tarball: https://npm.pkg.github.com/download/@8th-dev/ui/0.1.0/55b31c989d70102e3d90b543d89b07b62f05ecf6}
+  '@8th-dev/ui@0.1.2':
+    resolution: {integrity: sha512-PMsjH+zP/fPlp9JW/lCHhT1wb8EkkcdVF/hk6GBA2+ZmAwHZWz08XSDFaxm7KXau/RAm3cszeWuiFcnUdiociQ==}
 
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
@@ -2952,7 +2952,7 @@ packages:
 
 snapshots:
 
-  '@8th-dev/ui@0.1.0(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@7.2.0)(typescript@5.9.3)':
+  '@8th-dev/ui@0.1.2(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(supports-color@7.2.0)(typescript@5.9.3)':
     dependencies:
       '@base-ui/react': 1.7.0(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       class-variance-authority: 0.7.1
