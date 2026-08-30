@@ -32,7 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <div className="mx-auto flex w-full max-w-4xl items-center justify-between px-6 py-5">
             <Link
               className="text-base font-semibold text-zinc-950 transition-colors hover:text-zinc-500 dark:text-zinc-50 dark:hover:text-zinc-400"
-              href="/blog"
+              href="/"
             >
               8th Blog
             </Link>
