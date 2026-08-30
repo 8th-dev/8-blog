@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import "./globals.css";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   description: "Notes, experiments, and things learned along the way.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
