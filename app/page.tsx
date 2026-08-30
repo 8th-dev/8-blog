@@ -17,34 +17,29 @@ export default async function Home() {
 
   return (
     <main className="mx-auto w-full max-w-3xl px-6 py-16 sm:py-24">
-      <header className="border-b border-zinc-200 pb-10 dark:border-zinc-800">
-        <p className="text-sm font-medium uppercase tracking-[0.18em] text-zinc-500">
+      <header className="border-b pb-10">
+        <p className="text-sm font-medium uppercase tracking-[0.18em]">
           8th
         </p>
-        <h1 className="mt-3 text-4xl font-semibold text-zinc-950 sm:text-5xl dark:text-zinc-50">
-          8th Blog
-        </h1>
-        <p className="mt-4 max-w-2xl text-lg leading-7 text-zinc-600 dark:text-zinc-400">
+        <h1 className="mt-3">8th Blog</h1>
+        <p className="mt-4 max-w-2xl text-lg">
           A place for notes, experiments, and thoughts as they take shape.
         </p>
       </header>
 
-      <section className="divide-y divide-zinc-200 dark:divide-zinc-800">
+      <section className="divide-y">
         {posts.map((post) => (
           <article key={post.id} className="py-8 first:pt-10">
-            <time className="text-sm text-zinc-500" dateTime={post.date}>
+            <time className="text-sm text-muted-foreground" dateTime={post.date}>
               {formatDate(post.date)}
             </time>
-            <h2 className="mt-2 text-2xl font-semibold text-zinc-950 sm:text-3xl dark:text-zinc-50">
-              <Link
-                className="transition-colors hover:text-zinc-500 dark:hover:text-zinc-400"
-                href={`/posts/${post.slug}`}
-              >
+            <h2 className="mt-2">
+              <Link className="no-underline" href={`/posts/${post.slug}`}>
                 {post.title}
               </Link>
             </h2>
             <div
-              className="mt-3 max-w-2xl leading-7 text-zinc-600 dark:text-zinc-400"
+              className="mt-3 max-w-2xl"
               dangerouslySetInnerHTML={{ __html: post.excerpt }}
             />
           </article>

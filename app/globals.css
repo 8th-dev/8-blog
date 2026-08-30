@@ -1,54 +1,8 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), sans-serif;
-}
+@import "@8th-dev/ui/styles";
 
 .wordpress-content>*+* {
   margin-top: 1.5rem;
-}
-
-.wordpress-content h2,
-.wordpress-content h3,
-.wordpress-content h4 {
-  color: var(--foreground);
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-.wordpress-content h2 {
-  font-size: 1.75rem;
-}
-
-.wordpress-content h3 {
-  font-size: 1.4rem;
-}
-
-.wordpress-content a {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
 }
 
 .wordpress-content img {

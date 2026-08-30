@@ -32,16 +32,14 @@ export default async function PostPage({ params }: PostPageProps) {
   return (
     <main className="mx-auto w-full max-w-3xl px-6 py-16 sm:py-24">
       <article>
-        <header className="border-b border-zinc-200 pb-10 dark:border-zinc-800">
-          <time className="text-sm text-zinc-500" dateTime={post.date}>
+        <header className="border-b pb-10">
+          <time className="text-sm text-muted-foreground" dateTime={post.date}>
             {formatDate(post.date)}
           </time>
-          <h1 className="mt-3 text-4xl font-semibold leading-tight text-zinc-950 sm:text-5xl dark:text-zinc-50">
-            {post.title}
-          </h1>
+          <h1 className="mt-3">{post.title}</h1>
         </header>
         <div
-          className="wordpress-content mt-10 text-lg leading-8 text-zinc-700 dark:text-zinc-300"
+          className="wordpress-content mt-10 text-lg"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
       </article>
