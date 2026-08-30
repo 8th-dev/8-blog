@@ -19,11 +19,15 @@ export default async function BlogPage() {
         <main className="mx-auto w-full max-w-4xl px-6 py-16 sm:py-24">
             <header className="border-b border-zinc-200 pb-10 dark:border-zinc-800">
                 <p className="text-sm font-medium uppercase tracking-[0.18em] text-zinc-500">
-                    Writing
+                    8th
                 </p>
                 <h1 className="mt-3 text-4xl font-semibold text-zinc-950 sm:text-5xl dark:text-zinc-50">
-                    Blog
+                    8th Blog
                 </h1>
+                <p className="mt-4 max-w-2xl text-lg leading-7 text-zinc-600 dark:text-zinc-400">
+                    A place for notes, experiments, and thoughts as they take
+                    shape.
+                </p>
             </header>
 
             <section className="divide-y divide-zinc-200 dark:divide-zinc-800">
