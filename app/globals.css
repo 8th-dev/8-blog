@@ -1,26 +1,24 @@
 @import "tailwindcss";
+@import "@8th-dev/ui/styles";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.wordpress-content>*+* {
+  margin-top: 1.5rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.wordpress-content img {
+  height: auto;
+  max-width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.wordpress-content ul,
+.wordpress-content ol {
+  padding-left: 1.5rem;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.wordpress-content ul {
+  list-style: disc;
+}
+
+.wordpress-content ol {
+  list-style: decimal;
 }
